@@ -1,0 +1,17 @@
+**/bin/
+**/obj/
+.vs/
+connection.txt
+*.user
+
+# Generated runnable build
+/ChayNgay/
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+gmail.json
+thanhtoan.json
+*.pfx
+*.p12
+

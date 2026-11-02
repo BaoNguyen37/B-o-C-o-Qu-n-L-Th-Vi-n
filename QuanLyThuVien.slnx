@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/Database/">
+    <File Path="Database/00_CAI_MOI_NOVA.sql" />
+    <File Path="Database/01_NANG_CAP_BAN_CU.sql" />
+    <File Path="Database/03_NOVA.sql" />
+    <File Path="Database/04_TEST_NGHIEPVU.sql" />
+  </Folder>
+  <Project Path="QuanLyThuVien.DTO/QuanLyThuVien.DTO.csproj" />
+  <Project Path="QuanLyThuVien.DAL/QuanLyThuVien.DAL.csproj" />
+  <Project Path="QuanLyThuVien.BLL/QuanLyThuVien.BLL.csproj" />
+  <Project Path="QuanLyThuVien.GUI/QuanLyThuVien.GUI.csproj" />
+  <Project Path="Tests/QuanLyThuVien.Tests.csproj" />
+</Solution>

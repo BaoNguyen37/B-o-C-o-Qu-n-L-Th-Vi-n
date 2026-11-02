@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationVisualStyles>true</ApplicationVisualStyles>
+    <RootNamespace>QuanLyThuVien.GUI</RootNamespace>
+    <AssemblyName>QuanLyThuVien</AssemblyName>
+    <Product>Quản lý thư viện</Product>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="QRCoder" Version="1.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuanLyThuVien.BLL\QuanLyThuVien.BLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FrmLogin.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="FrmLogin.Designer.cs"><DependentUpon>FrmLogin.cs</DependentUpon></Compile>
+    <Compile Update="FrmMain.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="FrmMain.Designer.cs"><DependentUpon>FrmMain.cs</DependentUpon></Compile>
+    <Compile Update="FrmDoiMatKhau.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="FrmDoiMatKhau.Designer.cs"><DependentUpon>FrmDoiMatKhau.cs</DependentUpon></Compile>
+    <Compile Update="UcDashboard.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="UcDashboard.Designer.cs"><DependentUpon>UcDashboard.cs</DependentUpon></Compile>
+    <Compile Update="UcSach.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="UcSach.Designer.cs"><DependentUpon>UcSach.cs</DependentUpon></Compile>
+    <Compile Update="UcDocGia.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="UcDocGia.Designer.cs"><DependentUpon>UcDocGia.cs</DependentUpon></Compile>
+    <Compile Update="UcMuonTra.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="UcMuonTra.Designer.cs"><DependentUpon>UcMuonTra.cs</DependentUpon></Compile>
+    <Compile Update="UcPhieuPhat.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="UcPhieuPhat.Designer.cs"><DependentUpon>UcPhieuPhat.cs</DependentUpon></Compile>
+    <Compile Update="UcNhacTra.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="UcNhacTra.Designer.cs"><DependentUpon>UcNhacTra.cs</DependentUpon></Compile>
+    <Compile Update="FrmQrThanhToan.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="FrmQrThanhToan.Designer.cs"><DependentUpon>FrmQrThanhToan.cs</DependentUpon></Compile>
+    <Compile Update="UcHeThong.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="UcHeThong.Designer.cs"><DependentUpon>UcHeThong.cs</DependentUpon></Compile>
+    <Compile Update="UcThongKe.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="UcThongKe.Designer.cs"><DependentUpon>UcThongKe.cs</DependentUpon></Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="../Database/00_CAI_MOI_NOVA.sql" Link="Database/00_CAI_MOI_NOVA.sql" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
